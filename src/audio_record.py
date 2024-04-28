@@ -47,6 +47,8 @@ class Recorder:
     def _create_recording_resources(self, save_path: str) -> None:
         self._pyaudio = pyaudio.PyAudio()
         self._stream = self._pyaudio.open(**self.stream_params.to_dict())
+        print("======================================")
+        print(f"save_path: {save_path}")
         self._create_wav_file(save_path)
 
     def _create_wav_file(self, save_path: str):

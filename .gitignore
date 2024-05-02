@@ -24,10 +24,14 @@ var/
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+*.wav
 
 
 # Notebook Checkpoints
 .ipynb_checkpoints/
+
+# Notebook
+*.ipynb
 
 whisper-small-hi/
 .env
